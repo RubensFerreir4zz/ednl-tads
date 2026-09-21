@@ -1,3 +1,4 @@
+package bst;
 import java.util.Iterator;
 import java.util.List;
 import java.util.ArrayList;
@@ -77,12 +78,12 @@ public class Bst implements BstInterface {
         return n != null ? n.getRightChild() : null;
     }
 
-    public Node hasLeft(Node n) {
-        return n != null ? n.getLeftChild() : null;
+    public boolean hasLeft(Node n) {
+        return n.getLeftChild() != null;
     }
 
-    public Node hasRight(Node n) {
-        return n != null ? n.getRightChild() : null;
+    public boolean hasRight(Node n) {
+        return n.getRightChild() != null;
     }
 
     public boolean isLeftChild(Node n) {
