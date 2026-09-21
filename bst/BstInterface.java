@@ -1,3 +1,4 @@
+package bst;
 import java.util.Iterator;
 
 public interface BstInterface {
@@ -21,9 +22,9 @@ public interface BstInterface {
 
     Node rightChild(Node n);
 
-    Node hasLeft(Node n);
+    boolean hasLeft(Node n);
 
-    Node hasRight(Node n);
+    boolean hasRight(Node n);
 
     boolean isLeftChild(Node n);
 
