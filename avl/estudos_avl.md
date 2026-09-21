@@ -40,5 +40,11 @@ FB(v):
     < -1 subárvore direita está desbalanceando o nó v
 ```
 
+## Insert
+Na inserção, devemos utilizar um método para definir e verificar o balanceamento desse nó. Então, podemos criar um while que vai subindo árvore, com as condições de parada sendo:
 
+- antecessor == 0
+- antecessor == root
+- antecessor == 2 ou -2 (precisa ser rebalanceada)
 
+O metodo que criei chama-se balance(), onde ele recebe a key do novo nó e começa a escalar a árvore a partir desse nó, fazendo as verificações citadas acima.
