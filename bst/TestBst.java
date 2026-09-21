@@ -1,3 +1,4 @@
+package bst;
 import java.util.Iterator;
 
 public class TestBst {
