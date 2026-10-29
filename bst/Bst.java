@@ -126,8 +126,12 @@ public class Bst implements BstInterface {
         return old;
     }
 
+    protected Node createNode(int key, Object o) {
+        return new Node(key, o);
+    }
+
     public void insert(int key, Object o) {
-        Node novo = new Node(key, o);
+        Node novo = createNode(key, o);
         if (root == null) {
             root = novo;
             size = 1;
@@ -272,5 +276,9 @@ public class Bst implements BstInterface {
             }
         }
         return null;
+    }
+
+    public void setRoot(Node node) {
+        this.root = node;
     }
 }

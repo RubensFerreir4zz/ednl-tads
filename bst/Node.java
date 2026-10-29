@@ -2,7 +2,6 @@ package bst;
 
 public class Node {
     private int key;
-    private int fb;
     private Object object;
     private Node leftChild;
     private Node rightChild;
@@ -51,12 +50,5 @@ public class Node {
 
     public void setParent(Node parent) {
         this.parent = parent;
-    }
-
-    public int getFb(){
-        return this.fb;
-    }
-    public int setFb(int newFb){
-        return this.fb += newFb;
     }
 }

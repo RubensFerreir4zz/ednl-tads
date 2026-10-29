@@ -45,4 +45,6 @@ public interface BstInterface {
     Object find(int key);
 
     Node findNode(int key);
+
+    void setRoot(Node node);
 }
